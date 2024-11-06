@@ -33,7 +33,7 @@ const Auth = () => {
               </button>
             </div>
             <div className="overlay-panel overlay-right">
-              <h1>اسم البيئة</h1>
+              <h1>بيئة تعلم قائمة على انترنت الأشياء</h1>
             </div>
           </div>
         </div>

@@ -12,7 +12,7 @@ export const NavbarData = [
     path: "/objectives",
   },
   {
-    title: "الوحدات التعليمية",
+    title: "الموديولات التعليمية",
     path: "/modules/1",
   },
   {

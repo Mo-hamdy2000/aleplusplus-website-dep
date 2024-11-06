@@ -59,11 +59,10 @@ a {
   text-decoration: none;
   margin: 15px 0;
 }
-
 button {
   border-radius: 20px;
-  border: 1px solid #746bf5;
-  background-color: #746bf5;
+  border: 1px solid #4CAF50;
+  background-color: #4CAF50;
   color: #ffffff;
   font-size: 12px;
   font-weight: bold;
@@ -86,6 +85,13 @@ button.ghost {
   border-color: #ffffff;
 }
 
+button:hover {
+  background-color: #66BB6A;
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+}
+
 form {
   background-color: #ffffff;
   display: flex;
@@ -105,10 +111,16 @@ input {
   width: 100%;
 }
 
+input:focus {
+  border: 2px solid #81c784;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
 .container {
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 14px 28px rgba(76, 175, 80, 0.2), 0 10px 10px rgba(76, 175, 80, 0.18);
   position: relative;
   overflow: hidden;
   width: 768px;
@@ -121,12 +133,24 @@ input {
   top: 0;
   height: 100%;
   transition: all 0.6s ease-in-out;
+  animation: fadeIn 0.8s ease-in-out;
 }
 
 .sign-in-container {
   left: 0;
   width: 50%;
   z-index: 2;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .container.right-panel-active .sign-in-container {
@@ -178,8 +202,8 @@ input {
 
 .overlay {
   background: #41b9ff;
-  background: -webkit-linear-gradient(to right, #539afd, #746bf5);
-  background: linear-gradient(to right, #539afd, #746bf5);
+  background: -webkit-linear-gradient(to right, #66BB6A, rgba(76, 175, 80, 0.5));
+  background: linear-gradient(to right, #66BB6A, rgba(76, 175, 80, 0.5));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;

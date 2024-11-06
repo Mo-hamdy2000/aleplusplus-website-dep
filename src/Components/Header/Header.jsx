@@ -5,7 +5,7 @@ import Navbar from "../Navbar/Navbar"
 const Header = () => (
   <header className="header">
     <div>
-      <div className="title">بيئة تعلم مدعمة بانترنت الأشياء</div>
+      <div className="title">بيئة تعلم قائمة على انترنت الأشياء</div>
       <div className="subtitle">
         إعداد 
         <div>

@@ -23,19 +23,19 @@ const subItems = [
 
 export const Units = {
   1: {
-    title: "الوحدة الأولي",
+    title: "الموديول الأول",
     items: [...subItems],
   },
   2: {
-    title: "الوحدة الثانية",
+    title: "الموديول الثاني",
     items: [...subItems],
   },
   3: {
-    title: "الوحدة الثالثة",
+    title: "الموديول الثالث",
     items: [...subItems], 
   },
   4: {
-    title: "الوحدة الرابعة",
+    title: "الموديول الرابع",
     items: [...subItems], 
   },
 };
