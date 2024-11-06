@@ -12,7 +12,7 @@ import Objectives from "../pages/module/Objectives/Objectives";
 import OverallObjectives from "../pages/Objectives";
 import Content from "../pages/module/Content/Content";
 import Activities from "../pages/module/Activities/Activities";
-import Resources from "../pages/module/Resources";
+import Resources from "../pages/module/Resources/Resources";
 import Tests from "../pages/module/Tests/Tests";
 import Upload from "../Components/Upload";
 import Dashboard from "../pages/Dashboard";
