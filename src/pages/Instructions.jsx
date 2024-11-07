@@ -2,15 +2,15 @@ import { useState } from "react";
 
 function Instructions() {
   return (
-    <div className="content">
-      <div className="d-flex info-container mt-sm-5 my-1">
-        <div className="info-header">
+    <div className="page-outline">
+      <div className="card">
+        <div className='text-red text-center text-bold text-large'>
           تعليمات استخدام بيئة التعلم التكيفية
         </div>
         <br />
         <div>
           عزيزى الطالب هذه البيئة صُممت من أجل تنمية مهارات تطوير الإنفوجرافيك،<br/> وقبل البدء بالدراسة يرجى اتباع التعليمات التالية :<br/><br/>
-          <div className="unit-grades"> 
+          <div> 
             1- عليك أن تجيب عن الاختبار القبلي الكلي لبيئة التعلم التكيفية قبل دراسة الموديولات لتحديد مستوى تعلمك<br/>
             2- عليك أن تجيب على مقياس التنور التكنولوجي ، ثم بعد ذلك تنتقل لدراسة الموديولات بالترتيب.<br/>
             3- عليك أن تجيب عن الاختبار القبلي لكل موديول من موديولات البيئة ، ثم ثم بعد ذلك تنتقل لدراسة الموديول <br/>

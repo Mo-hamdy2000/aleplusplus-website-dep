@@ -36,3 +36,20 @@ code {
   display: flex;
   justify-content: center;
 }
+
+.page-outline {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  row-gap: 2rem;
+  flex-grow: 1;
+}
+
+.page-outline .card {
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 1.2rem;
+  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.1);
+}

@@ -2,11 +2,11 @@ import { useState } from "react";
 
 function Contact() {
   return (
-    <div className="content">
-      <div className="d-flex info-container mt-sm-5 my-1">
+    <div className="page-outline">
+      <div className="card">
         <br />
         <div>
-          <div className="info-section">
+          <div className="text-center">
             د / عايدة فاروق حسين شعبان<br/>
             أستاذ مساعد بقسم تكنولوجيا التعليم كلية التربية جامعة الاسكندرية<br/>
             draidaf@alexu.edu.eg<br/><br/><br/>

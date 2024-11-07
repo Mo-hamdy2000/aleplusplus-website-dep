@@ -21,6 +21,11 @@
   user-select: none;
 }
 
+.cant-join {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
 .joined-container {
   display: flex;
   flex-direction: column;

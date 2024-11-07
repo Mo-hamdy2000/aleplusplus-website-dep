@@ -6,6 +6,7 @@ import { AuthContext } from "../../../Components/Auth/AuthcontextProvider";
 
 const ACTIVITY_STATUS = {
   DECIDING: 'deciding', // loading the data for the first time
+  CANT_JOIN: 'cant_join', // can't join
   NOT_JOINED: 'not_joined', // student didn't click the join button yet
   JOINED: 'not_started', // student clicked the join button but required student count to start the test is not reached yet
   ON_GOING: 'ongoing', // student is doing the test
@@ -22,12 +23,13 @@ const Activities = () => {
   const [intervalId, setIntervalId] = useState(null)
 
   const resetInterval = () => {
+    clearInterval(intervalId)
     setIntervalId(null)
     setStatus(ACTIVITY_STATUS.DECIDING)
   }
 
   useEffect(() => {
-    async function fetch() {
+    async function checkStatus() {
       const { data } = await show()
       if (!data) {
         return
@@ -44,9 +46,21 @@ const Activities = () => {
         pull()
       }
     }
+
+    async function canJoinActivity() {
+      const canJoinActivity = await canJoin()
+      if (canJoinActivity) {
+        setStatus(ACTIVITY_STATUS.NOT_JOINED)
+        await checkStatus()
+      }
+      else {
+        setStatus(ACTIVITY_STATUS.CANT_JOIN)
+      }
+    }
+    
     resetInterval()
     setStatus(ACTIVITY_STATUS.DECIDING)
-    fetch()
+    canJoinActivity()
   
     return () => {
       if (intervalId) {
@@ -54,6 +68,11 @@ const Activities = () => {
       }
     }
   }, [unitId])
+
+  useEffect(() => {  
+    console.log(intervalId)
+  }, [intervalId])
+  
   
   const join = () => {
     const url = config.API_URL + "activities/join";
@@ -90,6 +109,24 @@ const Activities = () => {
       })
       const json = await response.json()
       return json
+    }
+    catch (error) {
+      console.log(error)
+    }
+  };
+
+  const canJoin = async() => {
+    const url = config.API_URL + "activities/can_join?unit_id=" + unitId;
+    try {
+      const response = await fetch(url, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `${ctx.token}`,
+        },
+      })
+      const { can_join } = await response.json()
+      return can_join
     }
     catch (error) {
       console.log(error)
@@ -135,6 +172,12 @@ const Activities = () => {
     if (status === ACTIVITY_STATUS.DECIDING) {
       return (
         <div className="deciding-loader" />
+      )
+    }
+
+    if (status === ACTIVITY_STATUS.CANT_JOIN) {
+      return (
+        <div className='cant-join'>لا يمكنك الانضمام للإختبار الآن...تحقق فيما بعد</div>
       )
     }
 

@@ -12,7 +12,7 @@ const Content = () => {
   }
 
   return (
-    <div className='test'>
+    <div>
       {content()}
     </div>
   )

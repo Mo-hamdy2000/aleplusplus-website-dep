@@ -2,7 +2,9 @@ import { useState } from "react";
 
 function EnlightenmentScale() {
   return (
-    <><div className="text-center">
+    <div className="page-outline">
+    <div className="card">
+    <div className="text-center">
     <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yCT26sSglUGH0kQ-XXUWzaAVV9VjQxxJrn6YrU7ru2lUMkdJSEJQVjhFMVNRUEpRMjRJRktaQUw4TS4u" style={{
           display: 'inline-block',
           padding: '2rem 1rem',
@@ -94,7 +96,8 @@ function EnlightenmentScale() {
         اختبار الجانب المعرفى لمهارات تطوير القصة الرقمية البعدي
       </a>
     </div>
-  </>
+    </div>
+  </div>
   );
 }
 
