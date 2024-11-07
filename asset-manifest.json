@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/aleplusplus-website-dep/static/css/main.580067a2.css",
-    "main.js": "/aleplusplus-website-dep/static/js/main.73db5bfe.js",
+    "main.css": "/aleplusplus-website-dep/static/css/main.af705ab3.css",
+    "main.js": "/aleplusplus-website-dep/static/js/main.759be409.js",
     "static/media/image3_2.png": "/aleplusplus-website-dep/static/media/image3_2.8cecce96f69712a71d9a.png",
     "static/media/image4_5.png": "/aleplusplus-website-dep/static/media/image4_5.68e5fdb8ebf09be0da6d.png",
     "static/media/image4_7.png": "/aleplusplus-website-dep/static/media/image4_7.cd2a36edb8f4514ff706.png",
@@ -23,11 +23,11 @@
     "static/media/image13.jpg": "/aleplusplus-website-dep/static/media/image13.aacde2c0a2b8fb1c9da7.jpg",
     "static/media/image12.jpg": "/aleplusplus-website-dep/static/media/image12.2f062b92534c33f318df.jpg",
     "index.html": "/aleplusplus-website-dep/index.html",
-    "main.580067a2.css.map": "/aleplusplus-website-dep/static/css/main.580067a2.css.map",
-    "main.73db5bfe.js.map": "/aleplusplus-website-dep/static/js/main.73db5bfe.js.map"
+    "main.af705ab3.css.map": "/aleplusplus-website-dep/static/css/main.af705ab3.css.map",
+    "main.759be409.js.map": "/aleplusplus-website-dep/static/js/main.759be409.js.map"
   },
   "entrypoints": [
-    "static/css/main.580067a2.css",
-    "static/js/main.73db5bfe.js"
+    "static/css/main.af705ab3.css",
+    "static/js/main.759be409.js"
   ]
 }
