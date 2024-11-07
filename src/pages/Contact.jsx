@@ -10,9 +10,9 @@ function Contact() {
             د / عايدة فاروق حسين شعبان<br/>
             أستاذ مساعد بقسم تكنولوجيا التعليم كلية التربية جامعة الاسكندرية<br/>
             draidaf@alexu.edu.eg<br/><br/><br/>
-            د / نجوان حامد القباني<br/>
+            د / منال السعيد<br/>
             أستاذ مساعد بقسم تكنولوجيا التعليم كلية التربية جامعة الاسكندرية<br/>
-            nagwanelkabany@alexu.edu.eg<br/><br/><br/>
+            manal.saied@alexu.edu.eg<br/><br/><br/>
           </div>
           <br/>
         </div>
